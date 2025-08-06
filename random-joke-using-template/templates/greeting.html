@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Greeting and Joke</title>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            background-color: #add8e6;
+            font-family: 'Indie Flower', cursive;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #333;
+        }
+        body {
+            flex-direction: column;
+            font-size: 2rem;
+            padding: 1rem;
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+        p {
+            margin: 0.3rem 0;
+        }
+        strong {
+            font-weight: bold;
+        }
+        em {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hi {{ name }}!</h1>
+    <p><strong>Here's a joke for you:</strong></p>
+    <p>{{ joke.setup }}</p>
+    <p><em>{{ joke.punchline }}</em></p>
+</body>
+</html>
+
